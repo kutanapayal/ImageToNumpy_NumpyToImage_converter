@@ -37,9 +37,9 @@ class FormatConverter:
         except Exception as e:
     
             
-            loggerClass.Writetofile(logging.WARNING,"Exception in numpy_to_base64...")
+            loggerClass.Writetofile(logging.ERROR,"Exception in numpy_to_base64...")
 
-            loggerClass.Writetofile(logging.WARNING,e)
+            loggerClass.Writetofile(logging.ERROR,e)
             return ("Sorry , there is some issue check logs for more detail..")
 
     def base64_to_image(string,enc_format="png"):
