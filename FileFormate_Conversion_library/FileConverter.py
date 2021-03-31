@@ -33,7 +33,7 @@ class FileConverter:
 
         except Exception as e:
             
-            loggerClass.Writetofile(logging.WARNING,"Exception in image_to_base64... ")
+            loggerClass.Writetofile(logging.ERROR,"Exception in image_to_base64... ")
                         
             return ("Sorry , there is some issue check logs for more detail...")
 
