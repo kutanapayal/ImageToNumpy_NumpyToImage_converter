@@ -43,18 +43,6 @@ class loggerClass:
         elif level==logging.ERROR:
                 logger.error(message)
 
-#     def WritetoScreen(level, message,format='%(levelname)s:%(message)s'):
-        
-#         logger1 = logging.getLogger(__name__)
-#         logger1.setLevel(level)
-
-#         stream_handler= logging.StreamHandler()
-#         stream_handler.setFormatter(logging.Formatter(format))
-#         logger1.addHandler(stream_handler)
-
-#         print("End of writeto screeen")
-#         loggerClass.WriteLog(logger1,level,message)
-
     def Writetofile(level, message):
         ''' 
             Writetofile Set's the logger level and call WriteLog method to Write log message on logfile.
