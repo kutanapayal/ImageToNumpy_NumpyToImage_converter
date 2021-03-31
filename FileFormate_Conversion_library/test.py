@@ -1,6 +1,5 @@
 from image_To_numpy_Converter import image_To_numpy_Converter
 from numpy_To_image_Converter import numpy_To_image_Converter
-import logging
 
 im_path = input("Enter image path :") 
 numpy_arr = image_To_numpy_Converter.image_To_numpyArray(im_path)
